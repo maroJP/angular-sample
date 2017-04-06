@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Hello AngularJS</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.6.1/angular-translate.js"></script>
+
+<script src="js/sample.js"></script>
+</head>
+<body>
+	<div ng-controller="sampleCtrl">
+		<div>{{result.data1}}</div>
+		<div>{{result.data2}}</div>
+		<div>{{result.data3}}</div>
+	</div>
+	<div ng-controller="langCtrl">
+		<button class="btn ng-scope" ng-click="getLanguage()" >getLanguage</button>
+	</div>
+
+	<div ng-controller="langCtrl2">
+		<button class="btn ng-scope" ng-click="getServerLanguage()" >getServerLanguage</button>
+	</div>
+
+</body>
+
+
+
+
+</html>
